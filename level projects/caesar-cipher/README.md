@@ -1,4 +1,3 @@
-
 # Caesar cipher
 
 При въведен криптиран текст да се изведе първоначалния, без да се задава какво е отместването.
@@ -46,7 +45,7 @@ Open **index.html** in your web browser.
 
 ## 📷 Demo
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Demo](https://github.com/georgievm/vsc-php-web-18-19/blob/a9b531a8395d9762dbda75da0c79d36d7494f93f/level%20projects/caesar-cipher/readme-media/caesar-cipher-demo.gif)
 
 
 ## 📝 License
