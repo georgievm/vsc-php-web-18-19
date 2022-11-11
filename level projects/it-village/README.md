@@ -13,6 +13,7 @@
 
 Ако потребителят не е доволен се извеждат останалите 23 варианта на текста.
 
+<img src="https://github.com/georgievm/vsc-php-web-18-19/blob/6d09845536710f58d12173f20a121e1edcb29af5/level%20projects/it-village/readme-media/GAME.png" width="700px" alt="App screenshot"/>
 
 ## Authors
 
@@ -57,12 +58,38 @@ And that's it!
 
 ## 📷 Demo
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Demo](https://github.com/georgievm/vsc-php-web-18-19/blob/6d09845536710f58d12173f20a121e1edcb29af5/level%20projects/it-village/readme-media/it-village-demo.gif)
 
 
 ## 🔥 Features
 
-- gosho
+* **Username** is showed at the top left corner:
+
+![Top left corner](https://github.com/georgievm/vsc-php-web-18-19/blob/6d09845536710f58d12173f20a121e1edcb29af5/level%20projects/it-village/readme-media/feature6.PNG)
+
+* **Save** game option:
+
+![Save game option](https://github.com/georgievm/vsc-php-web-18-19/blob/6d09845536710f58d12173f20a121e1edcb29af5/level%20projects/it-village/readme-media/feature4.PNG)
+
+The next time you log in there will be a prompt and you will have the option to continue:
+
+<img src="https://github.com/georgievm/vsc-php-web-18-19/blob/6d09845536710f58d12173f20a121e1edcb29af5/level%20projects/it-village/readme-media/feature1.PNG" width="500px" alt="save game option2"/>
+
+* **Rank table** - showing the number of all games played + victories (sorted by victories):
+
+![Rank Table](https://github.com/georgievm/vsc-php-web-18-19/blob/6d09845536710f58d12173f20a121e1edcb29af5/level%20projects/it-village/readme-media/feature3.PNG)
+
+* **Info panel** - showing information for current field, new/lost game, etc.
+
+![Info panel3](https://github.com/georgievm/vsc-php-web-18-19/blob/6d09845536710f58d12173f20a121e1edcb29af5/level%20projects/it-village/readme-media/feature2.PNG)
+
+![Info panel](https://github.com/georgievm/vsc-php-web-18-19/blob/6d09845536710f58d12173f20a121e1edcb29af5/level%20projects/it-village/readme-media/11Capture.PNG)
+
+![Info panel2](https://github.com/georgievm/vsc-php-web-18-19/blob/6d09845536710f58d12173f20a121e1edcb29af5/level%20projects/it-village/readme-media/1111323Capture.PNG)
+
+* **Dice panel** - button to throw again + GIF showing the current dice
+
+![Dice panel](https://github.com/georgievm/vsc-php-web-18-19/blob/6d09845536710f58d12173f20a121e1edcb29af5/level%20projects/it-village/readme-media/feature5.PNG)
 
 
 ## 📝 License
