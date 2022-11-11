@@ -22,6 +22,7 @@
 административна част - въвеждане информация за пътищата и местата за зареждане 
 потребителска част - определяне на маршрут /начален и краен град, евентуално междинни спирки/ и питане за времето за преминаването му.
 
+<img src="https://github.com/georgievm/vsc-php-web-18-19/blob/48db89298da669a0a672e10622fb12b0f5f40f1f/level%20projects/routes/readme-media/HOME.PNG" width="600px" alt="App Home page"/>
 
 ## Authors
 
@@ -67,7 +68,7 @@ That's it!
 
 ## 📷 Demo
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Demo](https://github.com/georgievm/vsc-php-web-18-19/blob/48db89298da669a0a672e10622fb12b0f5f40f1f/level%20projects/routes/readme-media/routes-demo.gif)
 
 
 ## 🔥 Features
