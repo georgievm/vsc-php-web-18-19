@@ -1,0 +1,43 @@
+body {
+	background: #c0c0c0;
+}
+.participant-pnl {
+	width: 350px;
+	background-color: #808080;
+	border-radius: 10px;
+	border: 1px solid #000;
+	color: #fff;
+	margin: 15px auto 15px auto;
+	padding: 7px;
+}
+.pnl-name {
+	text-align: center;
+	text-decoration: underline;
+	font-weight: bold;
+}
+label {
+	text-align: left;
+	margin-bottom: 5px;
+}
+.form-group {
+	margin-bottom: 0px;
+	padding: 0 15px 10px 12px;
+}
+input {
+	max-height: 33px;
+	border: 1px solid #000 !important;
+}
+ol {
+	text-align: center;
+	list-style-position: inside;
+	margin: 20px;
+}
+.btn {
+	min-width: 100px;
+}
+.submit {
+	margin: 20px auto 25px auto;
+}
+.center {
+	margin: 15px auto 20px auto;
+}

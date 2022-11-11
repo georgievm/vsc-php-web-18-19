@@ -1,0 +1,78 @@
+body {
+	margin: 0;
+}
+.filter_panel {
+	position: absolute;
+	width: 24%;
+	border: 1.5px solid #428bca;
+	top: 5.5%;
+	left: 3%;
+	right: 5%;
+	background-color: #e8e8e8;
+	border-radius: 5px;
+}
+.filter_heading {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Calibri;
+	text-align: center;
+	border-bottom: 2px solid #428bca;
+	padding: 4px;
+	margin-bottom: 7%;
+}
+table {
+	position: absolute;
+	top: 3%;
+	right: 3%;
+}
+.filter_div_row {
+	width: 85%;
+	margin-left: 7.5%;
+}
+.filter_label {
+	font-weight: bold;
+	font-family: Calibri;
+}
+.btn {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	margin-bottom: 4%;
+}
+select {
+	float: right;
+	margin-bottom: 6%;
+}
+.no_result {
+	position: absolute;
+	display: block;
+	top: 25%;
+	left: 29%;
+	font-size: 1.5vw;
+	width: 65%;
+	text-align: center;
+}
+hr {
+	margin-top: 8%;
+	margin-bottom: 6%;
+}
+.btn-link {
+	display: block;
+	width: 24%;
+	text-align: right;
+	margin-left: 3%;
+	margin-top: 1%;
+}
+.pagination {
+	position: absolute;
+	bottom: 3%;
+	width: 40%;
+	display: block;
+	left: auto;
+	right: auto;
+	height: 4%;
+	background-color: #d3d3d3;
+	text-align: center;
+}

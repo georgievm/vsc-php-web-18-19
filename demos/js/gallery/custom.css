@@ -1,0 +1,109 @@
+body {
+	margin: 0;
+	background-color: #bfcddb;
+}
+.heading {
+	font-family: Audiowide;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	margin-left: 30px;
+	text-shadow: -3px -3px 5px #fff;
+}
+::-webkit-scrollbar {
+  	width: 6px;
+}
+::-webkit-scrollbar-track {
+  	background: #bfcddb; 
+}
+::-webkit-scrollbar-thumb {
+  	background: #4e7eb1;
+  	border: 1px solid #000;
+  	border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #808080; 
+}
+.leftZn {
+	float: left;
+	padding: 0;
+}
+.panel {
+	border: 1px solid #fff;
+	border-left: none;
+	box-shadow: 0 0 2px #000;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 30px;
+	padding-top: 60px;
+	background-color: #95b2d0;
+}
+.sideBar {
+	float: right;
+	padding: 14px;
+	padding-bottom: 0;
+	background-color: #95b2d0;
+	border: 1px solid #fff;
+	border-right: none;
+	box-shadow: 0 0 2px #000;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin-bottom: 50px;
+}
+.container {
+	margin-bottom: 16px;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 15px;
+	box-shadow: 0 0 2px #000;
+}
+.conImgName {
+	color: #000;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	font-family: Baloo Bhai;
+}
+.conImg {
+	width: 85%;
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+ 	border-radius: 5px;
+}
+#preview {
+	padding: 0;
+	border-radius: 5px;
+}
+.previewName {
+	position: absolute;
+	top: 13px;
+	left: 35px;
+	font-family: Baloo Bhai;
+	font-size: 25px;
+	text-decoration: underline;
+}
+input[type=text] {
+	height: 30px;
+	width: calc(100% - 75px);
+	display: inline-block;
+}
+.btn {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	float: right;
+	display: inline-block;
+}
+.creator {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	color: #4e7eb1;
+}
+.error {
+	margin-left: 30px;
+	color: #4e7eb1;
+}

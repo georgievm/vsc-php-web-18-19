@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CaesarCipher</title>
+	<link rel="icon" type="icon/png" href="res/icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="res/custom.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<noscript>
+		<style>
+			main { margin-top: 70px; }
+		</style>
+		<div class="bg-warning nojs">
+			<div class="text-center text-danger">The app requires <u>JavaScript</u> to work.</div>
+		</div>
+	</noscript>
+
+	<main class="col-lg-8 col-md-10 col-sm-11 col-11">
+		<div class="main-pnl">
+			<div class="heading">CaesarCipher</div>
+			<img class="img-caesar" src="res/caesar.png" width="115px" alt="res/caesar.png">
+			<p>
+				Caesar cipher is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number (<span class="bold">shift</span>) of positions down or up the alphabet, as shown.
+			</p>
+			<img class="img-model" style="max-width: 340px;" src="res/model.png" width="86%" title="Shift: -3" alt="res/model.png">
+			<p>
+				<u>The "shift" number can be:</u><br><span class="bold">positive</span> - the letters for shifting begin at the beginning of the alphabet<br><span class="bold">negative</span>- the letters begin at the alphabet end (as on the image above)
+			</p>
+			<p>
+				The purpose of my web-app is to <u class="bold">decoding</u> and for it I use <u> automaticly calculated shift</u>:<br><span class="bold">shift = [each alph letter pos] - [most frequently text symbol pos]</span><br>*the alphabet(alph) is used to determine the positions(pos)
+			</p>
+			<button class="btn btn-try-it">Try it</button>
+		</div>
+		<div style="display: none;" class="decode-pnl">
+			<p style="padding-top: 7px;">
+				The most frequent letters in English are <span class="bold">e</span>, <span class="bold">h</span> and <span class="bold">t</span>.
+			</p>
+			<p>
+				That's precisely why firstly there will be shown the variants in which these 3 letters involved in the shift formula. By pressing the "Show all" button there will be shown all variants.
+			</p>
+			<form>
+				<textarea class="col-lg-7 col-md-8 col-sm-8 col-11" rows="3" placeholder="Ciphertext here..."></textarea>
+				<button style="margin-bottom: 30px;" class="btn btn-decode">Decode</button>
+			</form>
+			<div class="most-freq"></div>
+			<div class="container-zone col-lg-7 col-md-8 col-sm-8 col-11"></div>
+			<button class="btn btn-show-all" onclick="showAllContainers()">Show all (+23)</button>
+			<button style="display: none;" class="btn btn-top">&#8682;</button>
+		</div>
+	</main>
+	<footer class="col-lg-8 col-md-9 col-sm-10 col-11 text-center text-white bold">Made by M. Georgiev, 2019</footer>
+	<script src="script.js"></script>
+	<script src="functions.js"></script>
+</body>
+</html>

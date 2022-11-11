@@ -1,0 +1,111 @@
+body {
+	background-image: linear-gradient(to right, #000046, #1cb5e0);
+	background-attachment: fixed;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb {
+	border: 1px solid #fff;
+  background-color: #000046;
+}
+.heading {
+	font-family: Audiowide;
+	font-size: 43px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 3px 3px 3px #000;
+	margin-top: 30px;
+	margin-bottom: 35px;
+}
+.form-group {
+	width: 380px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+}
+label {
+	font-family: Audiowide;
+	margin-left: 12px;
+	color: darkgray;
+	text-shadow: 1px 1px #000;
+}
+select, input[type=text] {
+	text-align: center;
+	font-family: Audiowide;
+	font-size: 18px;
+	background-color: #c8c8c8 !important;
+	border: 1px solid #000 !important;
+	color: #000046 !important;
+}
+select:focus, input[type=text]:focus {
+	background-color: #c8c8c8 !important;
+}
+input[type=submit] {
+	font-weight: bold;
+	margin-top: 10px;
+	width: 120px;
+	background-color: #1cb5e0;
+	color: #000046;
+	border-radius: 25px;
+	border: 1px solid #000046;
+	box-shadow: 3px 3px 3px #000;
+}
+input[type=submit]:hover {
+	box-shadow: 2px 2px 1px #000;
+	color: #000046;
+}
+.error {
+	font-weight: bold;
+	color: #ff1a1a;
+	text-shadow: 2px 2px #000;
+	text-align: center;
+	margin-top: 22px;
+	font-size: 18px;
+}
+.invalid {
+	font-weight: bold;
+	color: #ff1a1a;
+	text-shadow: 2px 2px #000;
+	text-align: center;
+}
+.result_pnl {
+	color: #fff;
+	font-weight: bold;
+	font-family: Audiowide;
+	font-size: 20px;
+	text-shadow: -2px -2px #000;
+	text-align: center;
+	width: 370px;
+	background-image: linear-gradient(to left, #000046, #1cb5e0);
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: .25rem;
+	box-shadow: 0 0 10px #000;
+	border: 1px solid #000;
+}
+.zone {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #000;
+	overflow: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.arrow {
+	color: #fff;
+	font-size: 60px;
+	text-align: center;
+	margin-bottom: -32px;
+	text-shadow: 3px 3px #000;
+}
+.result {
+	display: inline;
+	color: #1cb5e0;
+}

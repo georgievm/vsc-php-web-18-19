@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>FormModel</title>
+	<link rel="icon" type="icon/png" href="img/icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+</head>
+<body>
+	<div class="martoo">Martin G.</div>
+	<div class="form-wrapper mx-auto col-lg-5 col-md-6 col-sm-7 col-11">
+		<div class="d-block">
+			<div class="form-type d-inline-block text-center">
+				<a class="font-weight-bold">Login</a>
+			</div>
+			<div class="form-type form-type-faded d-inline-block text-center">
+				<a class="font-weight-bold">Sign up</a>
+			</div>
+		</div>
+		<div class="subtitle">Enter your email and password <span class="font-weight-bold">to sign in</span></div>
+		<form>
+			<div class="form-group">
+				<label class="d-inline-block">Email*</label>
+				<input class="form-control" type="email" name="email" placeholder="Email">
+			</div>
+			<div class="form-group">
+				<label>Password*</label>
+				<div class="position-relative">
+					<input class="form-control pass-field" type="password" name="password" placeholder="Password">
+					<img class="hide-password-img" src="img/show.png">
+				</div>
+			</div>
+			<div class="form-group repeat-pass-group d-none">
+				<label>Repeat Password*</label>
+				<input class="form-control d-inline" type="password" name="repeatPassword" placeholder="Repeat password">
+			</div>
+			<div class="side-text"><span class="red-hover">Forgot your password?</span></div>
+			<div class="text-right">
+				<button class="btn btn-outline-primary pull-right btn-submit">Log In</button>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript">
+		var formTypes = document.querySelectorAll('.form-type'),
+			subtitle = document.querySelector('.subtitle'),
+			repeatPassGr = document.querySelector('.repeat-pass-group'),
+			passField = document.querySelector('.pass-field'),
+			hidePass = document.querySelector('.hide-password-img'),
+			sideText = document.querySelector('.side-text'),
+			submitBtn = document.querySelector('.btn-submit');
+
+		formTypes[0].addEventListener('click', function() {
+			formTypes[0].classList.remove('form-type-faded');
+			formTypes[1].classList.add('form-type-faded');
+			formTypes[1].style.borderTopRightRadius = '5px';
+			subtitle.innerHTML = 'Enter your email and password <span class="font-weight-bold">to sign in</span>';
+			repeatPassGr.classList.add('d-none');
+			hidePass.classList.remove('d-none');
+			sideText.innerHTML = '<span class="red-hover">Forgot your password?</span>';
+			sideText.style.textAlign = 'left';
+			submitBtn.textContent = 'Log In';
+		});
+		formTypes[1].addEventListener('click', function() {
+			formTypes[1].classList.remove('form-type-faded');
+			formTypes[0].classList.add('form-type-faded');
+			formTypes[0].style.borderTopLeftRadius = '5px';
+			formTypes[0].style.borderTopRightRadius = '0';
+			subtitle.innerHTML = 'Enter your personal details <span class="font-weight-bold">to create an acount</span>';
+			repeatPassGr.classList.remove('d-none');
+			hidePass.classList.add('d-none');
+			sideText.innerHTML = 'By creating an account you agree to our<br><span class="red-hover">Terms & Privacy</span>';
+			sideText.style.textAlign = 'center';
+			submitBtn.textContent = 'Create Account';
+		});
+		// show/hide password
+		hidePass.addEventListener('click', function() {
+			hidePass.style.filter = 'none';
+			if (hidePass.getAttribute('src') == 'img/show.png') {
+				hidePass.src = 'img/hide.png';
+				passField.type = 'text';
+			} else {
+				hidePass.src = 'img/show.png';
+				passField.type = 'password';
+			}
+		});
+		// some effects
+		passField.addEventListener('focus', function() {
+			hidePass.style.filter = 'none';
+		});
+		passField.addEventListener('focusout', function() {
+			hidePass.style.filter = 'grayscale(100%)';
+		});
+	</script>
+</body>
+</html>

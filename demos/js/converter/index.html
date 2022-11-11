@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ConvertMaster</title>
+	<link rel="icon" type="icon/png" href="https://ya-webdesign.com/images/how-to-convert-a-png-to-an-icon-4.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Fugaz+One|Russo+One|PT+Sans+Narrow" rel="stylesheet">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<h1 class="heading">ConvertMaster</h1>
+	<form action="" method="post">
+		<div class="form-group">
+			<label>Choose type of converting</label>
+			<select class="form-control" name="func">
+				<option value="dec_to_bin" selected>DEC TO BIN</option>
+				<option value="bin_to_dec">BIN TO DEC</option>
+				<option value="dec_to_hex">DEC TO HEX</option>
+				<option value="hex_to_dec">HEX TO DEC</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label>Input</label>
+			<input class="form-control" type="text" name="input" placeholder="What do you want to convert?">
+		</div>
+		<div class="form-group">
+			<div class="text-center">
+				<input class="btn" type="submit" name="convert" value="Convert">
+			</div>
+		</div>
+	</form>
+	<?php
+	if (isset($_POST['convert'])) {
+		$input = $_POST['input'];
+
+		if (!empty($input)) {
+			$func = $_POST['func'];
+			$result = "<script type='text/javascript'>document.write($func('$input'));</script>";
+
+			function printResult($text1, $value1, $text2, $value2) {
+				echo "<div class='result_pnl'>".
+					"<div class='zone'>$text1</div>".
+					"<div class='zone'>$value1</div>"."</div>"."<div class='arrow'>&#x261F;</div>".
+					"<div class='result_pnl'>".
+					"<div class='zone'>$text2</div>".
+					"<div class='zone'><div class='result'>$value2</div></div>".
+					"</div>";
+			}
+
+			if ($func == 'dec_to_bin') {
+				printResult('DEC', $input, 'BIN', $result);
+			} elseif ($func == 'bin_to_dec') {
+				printResult('BIN', $input, 'DEC', $result);
+			} elseif ($func == 'dec_to_hex') {
+				printResult('DEC', $input, 'HEX', $result);
+			} elseif ($func == 'hex_to_dec') {
+				printResult('HEX', $input, 'DEC', $result);
+			}
+		} else {
+			echo '<div class="error">'.'Empty field!'.'</div>';
+		}		
+}
+?>
+</body>
+</html>
