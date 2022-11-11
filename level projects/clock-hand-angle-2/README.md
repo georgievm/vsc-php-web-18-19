@@ -44,7 +44,7 @@ Voilà! 👌
 
 ## 📷 Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/georgievm/vsc-php-web-18-19/blob/f20426e06b5df288b4a6b0c878ab77c3f3d92228/level%20projects/clock-hand-angle-2/readme-media/clockhangle2.png)
 
 
 ## 📝 License
