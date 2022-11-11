@@ -49,5 +49,5 @@ Voilà! 👌
 
 ## 📝 License
 
-This project is [GPL v3](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE) licensed.
+This project is GPL v3 licensed.
 
